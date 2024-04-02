@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FavoriteBook</string>
+    <string name="actMain_base">Тут появится название вашей любимой книги!</string>
+    <string name="actMain_userBase">Название Вашей любимой книги: </string>
+    <string name="actShare_hint">Введите название и Вашей любимой книги</string>
+</resources>
