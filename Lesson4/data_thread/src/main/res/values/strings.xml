@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">data_thread</string>
+    <string name="about_threads">
+        runOnUiThread() используется для запуска на основном (UI) потоке действия из другого потока.\n
+        post() запускает действие немедленно, не ожидая завершения текущего потока.\n
+        postDelayed() аналогичен предыдущему, но с задержкой в мс перед выполнением.
+    </string>
+    <string name="zapusk"> Последовательность запуска:\n
+        1. Запускается поток t с задержкой 2с;\n
+        2. После 2с запускается runn1 через runOnUiThread;\n
+        3. Без ожидания завершения runOnUiThread, запускается runn2 через post;\n
+        4. Через postDelayed, запускается runn3 с задержкой в 2с. Текст tvInfo изменится на "runn3" через 2с после выполнения runn1;</string>
+</resources>

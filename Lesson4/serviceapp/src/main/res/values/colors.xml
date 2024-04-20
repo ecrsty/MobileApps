@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Secondary">#232936</color>
+    <color name="bgDark">#191A24</color>
+    <color name="bgLight_col">#352B4B</color>
+    <color name="elemDark_col">#45445F</color>
+    <color name="Dark_Grey">#4E586E</color>
+    <color name="elemMiddle_col">#586170</color>
+    <color name="elemLight_col">#75828C</color>
+    <color name="accent">#FDEBBD</color>
+</resources>
