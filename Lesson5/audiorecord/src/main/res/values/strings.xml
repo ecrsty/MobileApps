@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AudioRecord</string>
+    <string name="textForStartBtn">Начать запись. №24 БСБО-04-22</string>
+</resources>

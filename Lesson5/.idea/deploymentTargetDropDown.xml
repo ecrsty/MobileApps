@@ -8,6 +8,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="audiorecord">
+        <State />
+      </entry>
       <entry key="camera">
         <State />
       </entry>

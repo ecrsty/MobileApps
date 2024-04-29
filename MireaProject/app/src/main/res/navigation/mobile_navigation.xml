@@ -34,4 +34,9 @@
         android:name="ru.mirea.solovevave.mireaproject.DataFragment"
         android:label="fragment_data"
         tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/nav_Les4"
+        android:name="ru.mirea.solovevave.mireaproject.nav_Les4"
+        android:label="fragment_nav__les4"
+        tools:layout="@layout/fragment_nav__les4" />
 </navigation>

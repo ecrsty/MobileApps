@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.solovevave.camera"
+    namespace = "ru.mirea.solovevave.audiorecord"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ru.mirea.solovevave.camera"
+        applicationId = "ru.mirea.solovevave.audiorecord"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
