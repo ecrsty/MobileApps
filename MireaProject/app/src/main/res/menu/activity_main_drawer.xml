@@ -26,5 +26,10 @@
             android:id="@+id/nav_data"
             android:icon="@drawable/ic_info"
             android:title="Data" />
+
+        <item
+            android:id="@+id/nav_Les4"
+            android:icon="@drawable/inetspeedtester"
+            android:title="Inet Speed (Les4)" />
     </group>
 </menu>
