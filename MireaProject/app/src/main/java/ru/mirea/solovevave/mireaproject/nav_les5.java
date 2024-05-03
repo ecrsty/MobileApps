@@ -137,11 +137,11 @@ public class nav_les5 extends Fragment implements SensorEventListener {
         super.onResume();
         if (temperatureSensor != null) {
             sensorManager.registerListener(this, temperatureSensor, SensorManager.SENSOR_DELAY_NORMAL);
-            temperatureAdvice.setText("Получение данных...");
+            temperatureAdvice.setText("Получение данных об изменении...");
         }
         if (pressureSensor != null) {
             sensorManager.registerListener(this, pressureSensor, SensorManager.SENSOR_DELAY_NORMAL);
-            pressureAdvice.setText("Получение данных...");
+            pressureAdvice.setText("Получение данных об изменении...");
         }
     }
 }

@@ -44,4 +44,14 @@
         android:name="ru.mirea.solovevave.mireaproject.nav_les5"
         android:label="fragment_nav_les5"
         tools:layout="@layout/fragment_nav_les5" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.solovevave.mireaproject.nav_profile"
+        android:label="fragment_nav_profile"
+        tools:layout="@layout/fragment_nav_profile" />
+    <fragment
+        android:id="@+id/recorderFragment"
+        android:name="ru.mirea.solovevave.mireaproject.recorderFragment"
+        android:label="fragment_recorder"
+        tools:layout="@layout/fragment_recorder" />
 </navigation>
