@@ -104,7 +104,7 @@
             app:layout_constraintVertical_bias="0.365" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/editTextAge"
             android:layout_width="81dp"
             android:layout_height="48dp"
             android:layout_marginTop="46dp"
@@ -188,6 +188,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.051" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.786" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
