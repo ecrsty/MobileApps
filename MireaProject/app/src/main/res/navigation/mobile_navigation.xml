@@ -64,4 +64,9 @@
         android:name="ru.mirea.solovevave.mireaproject.PostIndexFragment"
         android:label="fragment_fact"
         tools:layout="@layout/fragment_post_index" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ru.mirea.solovevave.mireaproject.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
 </navigation>

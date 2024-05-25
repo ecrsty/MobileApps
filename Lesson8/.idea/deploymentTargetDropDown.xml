@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State />
+      </entry>
+      <entry key="osmmaps">
+        <State />
+      </entry>
+      <entry key="yandexdriver">
+        <State />
+      </entry>
+      <entry key="yandexmaps">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

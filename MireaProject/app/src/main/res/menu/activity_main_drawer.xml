@@ -56,5 +56,10 @@
             android:id="@+id/factFragment"
             android:icon="@drawable/baseline_search_24"
             android:title="FactFragment" />
+
+        <item
+            android:id="@+id/mapFragment"
+            android:icon="@drawable/baseline_map_24"
+            android:title="MapFragment" />
     </group>
 </menu>
