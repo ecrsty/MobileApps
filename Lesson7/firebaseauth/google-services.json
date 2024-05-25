@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889385672262",
+    "project_id": "lesson7-4e40e",
+    "storage_bucket": "lesson7-4e40e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889385672262:android:4e5400e14ac47d47c0f447",
+        "android_client_info": {
+          "package_name": "ru.mirea.solovevave.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1DUdV53rYrRbZOGO5ELmB_ziy1cLPO-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

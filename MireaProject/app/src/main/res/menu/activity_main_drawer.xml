@@ -51,5 +51,10 @@
             android:id="@+id/fileWorker"
             android:icon="@drawable/baseline_inventory_24"
             android:title="FileWorker" />
+
+        <item
+            android:id="@+id/factFragment"
+            android:icon="@drawable/baseline_search_24"
+            android:title="FactFragment" />
     </group>
 </menu>

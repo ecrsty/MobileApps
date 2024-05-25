@@ -59,4 +59,9 @@
         android:name="ru.mirea.solovevave.mireaproject.FileWorker"
         android:label="fragment_file_worker"
         tools:layout="@layout/fragment_file_worker" />
+    <fragment
+        android:id="@+id/factFragment"
+        android:name="ru.mirea.solovevave.mireaproject.PostIndexFragment"
+        android:label="fragment_fact"
+        tools:layout="@layout/fragment_post_index" />
 </navigation>

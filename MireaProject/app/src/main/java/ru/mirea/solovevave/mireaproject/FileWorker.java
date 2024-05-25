@@ -89,7 +89,6 @@ public class FileWorker extends Fragment {
         editTextPassword = binding.editTextPassword;
         Button selectFileBtn = binding.buttonSelectFile;
         Button encryptBtn = binding.buttonEncrypt;
-        Button decryptBtn = binding.buttonDecrypt;
         FloatingActionButton fab = binding.fab;
 
         filePickerResultLauncher = registerForActivityResult(
@@ -103,7 +102,6 @@ public class FileWorker extends Fragment {
 
         selectFileBtn.setOnClickListener(v -> selectFile());
         encryptBtn.setOnClickListener(v -> encryptFile());
-        decryptBtn.setOnClickListener(v -> decryptFile());
 
         fab.setOnClickListener(v -> showCreateDialog());
 
@@ -207,27 +205,6 @@ public class FileWorker extends Fragment {
         }
     }
 
-    private void decryptFile() {
-        if (fileUri == null) {
-            Toast.makeText(getContext(), "Выберите файл", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        String password = editTextPassword.getText().toString();
-        if (password.isEmpty()) {
-            Toast.makeText(getContext(), "Введите пароль", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        try {
-            String content = readFile(fileUri);
-            String decryptedContent = decrypt(content, password);
-            createFile(getFileNameWithoutExtension(fileUri)+"_decrypted.txt", decryptedContent);
-            Toast.makeText(getContext(), "Файл дешифрован", Toast.LENGTH_SHORT).show();
-        } catch (Exception e) {
-            Log.d("OTLADKA", "Ошибка дешифрования: "+ e.toString());
-            Toast.makeText(getContext(), "Ошибка дешифрования", Toast.LENGTH_SHORT).show();
-        }
-    }
-
     private String readFile(Uri uri) throws Exception {
         StringBuilder content = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(getContext().getContentResolver().openInputStream(uri)))) {
@@ -253,22 +230,6 @@ public class FileWorker extends Fragment {
         }
     }
 
-    private String decrypt(String data, String password) {
-        SecretKey skey = generateKey(password);
-        Log.d("OTLADKA", "skey: "+skey);
-        try{
-            Cipher cipher = Cipher.getInstance("AES");
-            Log.d("OTLADKA", "cipher: "+cipher);
-            cipher.init(Cipher.DECRYPT_MODE, skey);
-            byte[] decryptedBytes = cipher.doFinal(Base64.decode(data, Base64.DEFAULT));
-            Log.d("OTLADKA", "decryptedBytes: "+decryptedBytes);
-            return new String(decryptedBytes);
-        } catch (NoSuchPaddingException | NoSuchAlgorithmException | BadPaddingException |
-                 InvalidKeyException | IllegalBlockSizeException e) {
-            Log.d("OTLADKA", "Ошибка дешифрования decrypt(): "+e.toString());
-            throw new RuntimeException(e);
-        }
-    }
 
     private SecretKey generateKey(String password){
         try{
